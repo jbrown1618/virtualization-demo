@@ -1,0 +1,88 @@
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.demo-container {
+    height: 1000px;
+    width: 1000px;
+    margin: 0;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+}
+
+.demo-window {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 20px;
+}
+
+.demo-plain, .demo-virtual {
+    width: 50%;
+}
+
+.code-line {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    line-height: 24px;
+}
+
+.line-number {
+    width: 50px;
+    flex-shrink: 0;
+    color: gray;
+}
+
+.line-text {
+    white-space: nowrap;
+    color: white;
+}
+
+.viewport-label {
+    color: red;
+    font-size: xx-large;
+    padding-left: 50px;
+}
+
+.case-label {
+    color: white;
+    font-size: xx-large;
+    padding-top: 50px;
+}
+
+.overlay {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-top, .overlay-bottom {
+    background: rgba(0, 0, 0, 0.4);
+    height: 250px;
+    width: 100%;
+}
+
+.overlay-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.overlay-center {
+    border: 2px dashed red;
+    height: 500px;
+    width: 100%;
+}
